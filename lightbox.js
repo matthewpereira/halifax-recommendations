@@ -1,7 +1,7 @@
 const lb = document.getElementById('lb'), img = lb.querySelector('img');
 let set = [], i = 0;
 const show = n => { i = (n + set.length) % set.length; img.src = set[i].href; img.alt = set[i].querySelector('img').alt; };
-document.querySelectorAll('.strip').forEach(strip => {
+document.querySelectorAll('.photos').forEach(strip => {
   const links = [...strip.querySelectorAll('a')];
   links.forEach((a, n) => a.addEventListener('click', e => {
     e.preventDefault(); set = links; show(n); lb.showModal();
