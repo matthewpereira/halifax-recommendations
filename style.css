@@ -11,10 +11,10 @@ a{color:var(--accent)}
 nav a{text-decoration:none}
 section{padding-top:48px;margin-top:48px;border-top:1px solid var(--rule)}
 p{margin:0 0 1em}
-.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:20px -16px 0;padding:0 16px 8px;scrollbar-width:thin}
+.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:20px -16px 0;padding:0 16px 8px;scrollbar-width:thin;scroll-padding-inline:16px}
 .ph{flex:none;scroll-snap-align:start}
 .ph img{display:block;height:240px;width:auto;border-radius:3px;background:var(--rule)}
-@media (min-width:800px){.strip{margin:20px calc((760px - min(100vw,1200px))/2) 0;padding:0 calc((min(100vw,1200px) - 760px)/2 + 16px) 8px}.ph img{height:300px}}
+@media (min-width:800px){.strip{margin:20px calc((760px - min(100vw,1200px))/2) 0;padding:0 calc((min(100vw,1200px) - 760px)/2) 8px;scroll-padding-inline:calc((min(100vw,1200px) - 760px)/2)}.ph img{height:300px}}
 .rest{margin:0}.rest div{padding:.5em 0;border-bottom:1px solid var(--rule)}
 dt{font-weight:bold}dd{margin:0;color:var(--muted)}
 ol{padding-left:1.2em}li{margin-bottom:1.5em}
