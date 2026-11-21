@@ -30,3 +30,4 @@ dialog button:hover{opacity:1}
 .x{top:4px;right:4px}.prev{left:0;top:50%;transform:translateY(-50%)}.next{right:0;top:50%;transform:translateY(-50%)}
 .map{font:600 .7rem/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;margin-left:.6em;padding:.3em .5em;border:1px solid var(--rule);border-radius:3px;vertical-align:.25em;white-space:nowrap}
 .map:hover{border-color:var(--accent)}
+.note{border-left:3px solid var(--accent);padding:.4em .8em;background:color-mix(in srgb,var(--accent) 10%,transparent);border-radius:0 3px 3px 0}
